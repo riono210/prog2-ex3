@@ -6,16 +6,65 @@
 initial_position[] int型配列　初期位置の保存
 size_of_map[] 　　　int型配列　迷路の大きさ（行と列）の保存
 
-coordinate[][]　　　　 String型二重配列　迷路の各座標にある記号を二重配列で
+coordinate[][]　　　　 char型二重配列　迷路の各座標にある記号を二重配列で
 　　　　　　　　　　　　       保存する。親配列の位置が行、子配列
 　　　　　　　　　　　　　　　　の位置が列。
 
 コンストラクタ
 initial_position = new int[]
 size_of_map = new int[]
-cooredinate = new String[][]
+cooredinate = new cahr[][]
 
 メソッド：Coordinate
 迷路の行と列の分だけ二重リストを作成し、迷路を一文字づつ対応
 した座標のリストに追加して行く
+
+
+
+クラス名　player  (mazeクラスを継承)
+
+フィールド変数
+int stepCounter 歩数を保存
+int[] location  現在地を保存
+
+コンストラクタ
+stepCounter = 0
+location[] = initial_position[] 初期位置を現在地にする
+mapLoad()
+
+
+メソッド
+upMove()　　上に移動
+location[1] -= 1
+stepCounter +=1
+
+downMove()　下に移動
+location[1] += 1
+stepCounter +=1
+
+leftMove()　左に移動
+location[0] -= 1
+stepCounter +=1
+
+rightMove()　右に移動
+location[0] += 1
+stepCounter +=1
+
+
+check()
+行き先が#だった場合元の座標に戻す
+
+
+mapLoad()　マップの読み込み
+int x = location[0]
+int y = location[1]
+
+coordinate[x][y] = "●"
+
+
+
+　
+
+
+
 
