@@ -3,10 +3,17 @@
 クラス名  maze
 
 フィールド変数
-initial_position 配列
-size_of_map
-goal 配列
+initial_position[] int型配列　初期位置の保存
+size_of_map[] 　　　int型配列　迷路の大きさ（行と列）の保存
 
+coordinate[][]　　　　 String型二重配列　迷路の各座標にある記号を二重配列で
+　　　　　　　　　　　　       保存する。親配列の位置が行、子配列
+　　　　　　　　　　　　　　　　の位置が列。
+
+コンストラクタ
+initial_position = new int[]
+size_of_map = new int[]
+cooredinate = new String[][]
 
 メソッド：Coordinate
 迷路の行と列の分だけ二重リストを作成し、迷路を一文字づつ対応
