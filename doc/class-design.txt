@@ -16,9 +16,10 @@ size_of_map = new int[]
 coordinate = new cahr[][]
 
 
-メソッド：Coordinate
+メソッド：
+(Coordinate
 迷路の行と列の分だけ二重リストを作成し、迷路を一文字づつ対応
-した座標のリストに追加して行く
+した座標のリストに追加して行く)コンストラクタで行う
 
 map（）　
 迷路の表示
